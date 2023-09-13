@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+    margin-top: -10px;
+    padding: 40px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+.completed-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(17, 89, 223);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 120px;
+    transition: 0.3s;
+}
+
+.completed-button:hover {
+    background-color: rgb(41, 116, 255);
+}
+
+.delete-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(211, 16, 16);
+    margin-left: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    width: 80px;
+    transition: 0.3s;
+}
+
+.delete-button:hover {
+    background-color: rgb(184, 14, 14);
+}
+
+.add-todo-button {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(17, 89, 223);
+    border-radius: 30px;
+    width: 150px;
+    transition: 0.3s;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.add-todo-button:hover {
+    background-color: rgb(42, 107, 228);
+}
+
+.container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.input {
+    border-radius: 50px;
+    border: 1px solid;
+    padding: 7px;
+    width: 300px;
+    
+}
+
+.todo-button {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(17, 89, 223);
+    border-radius: 30px;
+    width: 150px;
+    transition: 0.3s;
+    display: inline-block;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.todo-button:hover {
+    background-color: rgb(42, 107, 228);
+}
+
+.home-button {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(17, 89, 223);
+    border-radius: 30px;
+    width: 150px;
+    transition: 0.3s;
+    display: inline-block;
+    transition: 0.4s;
+
+}
+
+.home-button:hover {
+    background-color: rgb(42, 107, 228);
+}
+
+.container-add {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

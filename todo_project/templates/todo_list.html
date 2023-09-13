@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div class="container">
+        <a class="add-todo-button" href="{% url 'add_todo' %}">Yeni Görev Ekle &nbsp; <i class="fa-solid fa-plus"></i></a> 
+    </div>
+    <ul>
+        {% for todo in todos %}
+            <br><hr><br>
+            <li>
+                <p>{{ todo.title }}</p>
+                {% if not todo.completed %}
+                    <a class="completed-button" href="{% url 'complete_todo' todo.id %}">Tamamlandı &nbsp; <i class="fa-solid fa-check"></i></a>
+                {% endif %}
+                    <a class="delete-button" href="{% url 'delete_todo' todo.id %}">Sil &nbsp; <i class="fa-solid fa-trash"></i></a>
+            </li>
+        {% endfor %}
+    </ul>
+       
+</body>
+</html>
